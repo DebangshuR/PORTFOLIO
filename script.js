@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Typing animation
-  const words = ["Web Developer", "AI/ML Enthusiast", "Programmer"];
+  const words = ["a Web Developer", "an AI/ML Enthusiast", "a Programmer"];
   let wordIndex = 0;
   let charIndex = 0;
   let currentWord = '';
