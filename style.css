@@ -7,15 +7,21 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #0c1a25;
+  background-color: #0c444b;
   color: white;
   line-height: 1.6;
 }
 
 header {
-  background-color: #09131c;
-  padding: 20px 40px;
-  position: fixed;
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwU6XX_4Gc4TSTgw_JLmRrkBhnygCrVpl8CQ&s');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; */
+
+
+  background-color: #143247;
+  padding: 15px 40px;
+  position: top;
   width: 100%;
   top: 0;
   z-index: 1000;
@@ -50,7 +56,12 @@ nav ul li a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 180px 80px 100px;
-  background-color: #0c1a25;
+  background-color: #0c444b;
+  
+    /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyBKok3c76f_yNszlmR0HmGG9Bt7VKKHjfwA&s');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; */
 }
 
 .intro-text {
@@ -122,7 +133,7 @@ nav ul li a:hover {
   justify-content: space-between;
   align-items: center;
   padding: 100px 80px;
-  background-color: #112233;
+  background-color: #16384b;
 }
 
 .about-text {
@@ -158,7 +169,7 @@ nav ul li a:hover {
 
 .education {
   padding: 100px 80px;
-  background-color: #0c1a25;
+background-color: #083845;
   text-align: center;
 }
 
@@ -180,7 +191,7 @@ nav ul li a:hover {
 }
 
 .education-item {
-  background-color: #112233;
+  background-color: #091314f1;
   padding: 30px;
   border-radius: 15px;
   width: 300px;
@@ -311,7 +322,7 @@ nav ul li a:hover {
 }
 
 .project-card {
-  background-color: #112233;
+  background-color: #101111c2;
   padding: 30px;
   border-radius: 15px;
   width: calc(33.333% - 20px);
@@ -359,7 +370,7 @@ nav ul li a:hover {
 }
 
 .training-item, .achievement-item {
-  background-color: #0c1a25;
+  background-color: #181919ee;
   padding: 30px;
   border-radius: 15px;
   width: 300px;
@@ -435,7 +446,7 @@ nav ul li a:hover {
   margin-bottom: 15px;
   border-radius: 10px;
   border: none;
-  background-color: #0c1a25;
+  background-color: #171a1c;
   color: #ffffff;
   font-size: 16px;
 }
