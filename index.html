@@ -7,6 +7,7 @@
 <meta property="og:image" content="IMAGE.jpg">
 <meta property="og:type" content="website">
     <title>Debangshu Roy - Portfolio</title>
+   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -229,23 +230,27 @@
             </div>
         </div>
         <div class="contact-form" aria-label="Contact Form">
-            <form 
-                action="https://formsubmit.co/debangshuroy745@gmail.com" 
-                method="POST"
-                aria-label="Send a message"
-            >
-                <input type="hidden" name="_next" value="https://debangshur.github.io/PORTFOLIO/thankyou.html">
-                <input type="hidden" name="_captcha" value="false">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required aria-label="Your Name">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required aria-label="Your Email">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" name="subject" required aria-label="Subject">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required aria-label="Your Message"></textarea>
-                <button type="submit" aria-label="Send Message">Send</button>
-            </form>
+           <form id="contact-form">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="user_name" required placeholder="Your Name">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="user_email" required placeholder="you@email.com">
+
+    <label for="subject">Subject</label>
+    <select id="subject" name="subject" required>
+        <option value="" disabled selected>Choose a subject</option>
+        <option value="Job Opportunity">Job Opportunity</option>
+        <option value="Collaboration">Collaboration</option>
+        <option value="Feedback">Feedback</option>
+        <option value="Other">Other</option>
+    </select>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" required placeholder="Type your message here..."></textarea>
+
+    <button type="submit">Send</button>
+</form>
+<div id="form-message"></div>
         </div>
     </div>
 </section>
@@ -253,6 +258,7 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
