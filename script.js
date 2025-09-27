@@ -8,6 +8,20 @@ document.addEventListener("DOMContentLoaded", function () {
   const erasingSpeed = 50;
   const newWordDelay = 2000;
 
+(function(){
+    emailjs.init("_yJc2WKyDrHBoL2hJ"); // Replace with your EmailJS public key
+})();
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    emailjs.sendForm('service_k8zi864', 'template_maqc7w4', this)
+        .then(function() {
+            document.getElementById('form-message').innerHTML = "Message sent successfully!";
+            document.getElementById('contact-form').reset();
+        }, function(error) {
+            document.getElementById('form-message').innerHTML = "Failed to send message. Please try again later.";
+        });
+});
+
   function type() {
       if (charIndex < words[wordIndex].length) {
           currentWord += words[wordIndex].charAt(charIndex);
@@ -74,3 +88,4 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   }
 });
+
